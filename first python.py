@@ -43,10 +43,8 @@ def main() -> None:
         print("[System Error]: Invalid numeric matrix input. Computation aborted.")
         return
 
-    # Execute computation engine
     transaction_state = calculate_split_balances(event, cost, service_charge, group_size)
-
-    # Output Structured Financial Report
+    
     print("\n" + "---" * 14)
     print(f"Financial Ledger for Event: {transaction_state['event_name']}")
     print("---" * 14)
